@@ -39,7 +39,7 @@ body {
     border-inline: 2px solid transparent;
   }
   
-  .form .input::-moz-placeholder {
+  .form .li::-moz-placeholder {
     color: rgb(170, 170, 170);
   }
   

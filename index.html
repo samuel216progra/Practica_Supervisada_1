@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles/styleLogin.css">
     <title>Login</title>
@@ -9,11 +5,14 @@
 <body>
     <div class="container">
         <div class="heading"> Login </div>
-        <form action="" class="form">
-            <input required="" class="input" type="email" name="email" id="email" placeholder="E-mail" pattern="ebraulio@2022165" title="Enter valid email (1231@12)">
-            <input required="" class="input" type="password" name="password" id="password" placeholder="Password" pattern="123" title="Enter valid password (123)">
-            <input class="login-button" type="submit" value="Sign In">
+        <form class="form" onsubmit="redirectToPage(); return false;"> 
+            <input required class="input" type="email" name="email" id="email" placeholder="E-mail">
+            <input required class="input" type="password" name="password" id="password" placeholder="Password">
+            <input class="login-button" type="submit" value="Sign In" id="loginBtn">
         </form>
     </div>
+
+
+    <script src="./assets/Scripts/ScriptLogin.js"></script>
 </body>
 </html>
