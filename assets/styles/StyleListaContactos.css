@@ -12,7 +12,12 @@ body {
 }
 
 h2 {
-    color: #333;
+    color: #F4E7AB;
+}
+
+.imagen {
+    width: 150px; /* Ajusta el ancho de la imagen según tus necesidades */
+    height: auto; /* Altura automática para mantener la proporción original */
 }
 
 table {
