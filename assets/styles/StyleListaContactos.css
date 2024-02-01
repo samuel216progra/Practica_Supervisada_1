@@ -15,10 +15,7 @@ h2 {
     color: #F4E7AB;
 }
 
-.imagen {
-    width: 150px; /* Ajusta el ancho de la imagen según tus necesidades */
-    height: auto; /* Altura automática para mantener la proporción original */
-}
+
 
 table {
     border-collapse: collapse;
@@ -37,8 +34,20 @@ thead {
     ;
 }
 
-img {
-    width: 50px; /* Adjust the width as needed */
+img.img-principal {
+    width: 120px;
     height: auto;
-    margin-right: 10px; /* Adjust the margin as needed */
+    margin-bottom: 20px; 
+}
+
+.enlace-clickk {
+    display: flex;
+    justify-content: flex-start; 
+    margin-top: 20px;
+}
+
+.img-click {
+    width: 80px; 
+    height: auto;
+    margin-left: 1050px; 
 }
