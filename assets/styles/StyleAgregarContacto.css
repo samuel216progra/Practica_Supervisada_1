@@ -16,6 +16,79 @@ img.img-principal{
     
     width: 120px;
     height: auto;
-    margin-bottom: 60px;
+    margin-bottom: 6 0px;
      
+}
+
+form {
+    width: 80%; 
+    max-width: 400px; 
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 8px; 
+    border-radius: 10px;
+    position: relative;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #7C5349;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px; 
+    border-right: 12px;
+    border: 1px solid #ccc;
+    border-radius: 19px;
+}
+
+   
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+  
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; 
+    color: black; 
+    background-color: #F4E7AB; 
+    appearance: none; 
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+select:focus {
+    outline: none; 
+    border-color: #2ecc71; 
+    box-shadow: 0 0 5px rgba(46, 204, 113, 0.5);
+}
+
+.formx{
+
+    background-color: #EEF7FA; 
+    padding: 20px;
+    border-radius: 10px; 
+    width: 70%;
+    max-width: 300px; 
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5); 
+
+}
+img.img-principal{
+    width: 120px;
+    height: auto;
+    margin-left: 136px; 
+ 
 }
