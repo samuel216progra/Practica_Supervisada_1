@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    color: #3498db;
+}
+
+.datos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+}
+
+.encabezado {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.dato {
+    margin: 5px;
+}
