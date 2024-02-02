@@ -4,52 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/StyleListaContactos.css">
-    <title>Tabla</title>
+    <title>Contactos</title>
 
 </head>
 <body>
+    <a href="#menu" id="toggle"><span></span></a>
+
+<div id="menu">
+  <ul>
+    <li><a href="/index.html">Login</a></li>
+    <li><a href="./ListaContactos.html">Contactos</a></li>
+    <li><a href="#contact">Favoritos</a></li>
+  </ul>
+</div>
+
+ <a href="https://codepen.io/loredonut/pen/hjuai"></a>
     <h2>Contactos</h2>
     <img src="../resourse/img/Contacto.png"alt="aa" class="img-principal">
 
-    <table>
+    <table d="miTabla">
         <thead>
             <tr>
                 <th>Nombres :</th>
                 <th>Apellidos :</th>
-                <th>Numero :</th>
+                <th>Numero : </th>
                 <th>Correo :</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Juan</td>
-                <td>Fernandes</td>
+            
+<tr>
+   
+    <td><a href="verContacto.html?nombre=Juan&apellido=Echeverria&numero=+502 2695 1695&correo=jFernandes@hotmail.com">Juan</a></td>
+                <td>Echeverria</td>
                 <td>+502 2695 1695</td>
-                <td>jFernandes@hotmail.com </td>
+                <td>jFernandes@hotmail.com</td>
+</tr>
+
+                
                
-            </tr>
-            <tr>
-                <td>Braulio</td>
+
+            <tr> 
+                <td class="link-contact"><a href="VerContacto.html?nombre=Braulio&apellido=Echeverria&numero=+502 3265 1247&correo=Becheverria@kinal.edu.gt">Braulio</a></td>
+                
                 <td>Echeverria</td>
                 <td>+502 3265 1247</td>
                 <td>Becheverria@kinal.edu.gt</td>
               
             </tr>
             <tr>
-                <td>Dulce</td>
+                <td class="link-contact"> <a href="VerContacto.html?nombre=Dulce&apellido=Vega&numero=+502 5927 6154&correo=dulceve@plusti.gt">Dulce</a></td>
                 <td>Vega</td>
                 <td>+502 5927 6154</td>
                 <td>dulceve@plusti.gt</td>
               
             </tr>
             <tr>
-                <td>Kenia</td>
+                <td class="link-contact"><a href="VerContacto.html?nombre=Kenia&apellido=Osorio&numero=+502 6328 4564&correo=kenita25654oso@gmail.com">Kenia</a></td>
                 <td>Osorio</td>
                 <td>+502 6328 4564</td>
                 <td>kenita25654oso@gmail.com</td>
             </tr>
             <tr>
-                <td>Paloma</td>
+                <td class="link-contact"><a href="VerContacto.html?nombre=Paloma&apellido=Villatoro&numero=+502 6319 4421&correo=palo214villsdfa@hotmail.com">Paloma</a></td>
                 <td>Villatoro</td>
                 <td>+502 6319 4421</td>
                 <td>palo214villsdfa@hotmail.com</td>
@@ -65,6 +83,7 @@
         <img src="../resourse/img/btnAgregar.png" alt="aa" class="img-click">
     </a>
 
+        
     
         <script src="../Scripts/ScrioptListaContactos.js"></script>
 </body>
