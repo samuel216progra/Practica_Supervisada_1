@@ -1,8 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color:#BCC4E4
-
-    ;
+    background: rgb(50,90,146);
+    background: linear-gradient(90deg, rgba(50,90,146,1) 0%, rgba(244,231,171,1) 50%, rgba(22,157,212,1) 100%);
     margin: 0;
     padding: 0;
     display: flex;
@@ -33,7 +32,7 @@ label {
     position: relative;
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
-    color: #7C5349;
+    color: black;
 }
 
 input,
@@ -64,7 +63,7 @@ select {
     border-radius: 4px;
     font-size: 16px; 
     color: black; 
-    background-color: #F4E7AB; 
+    background-color: #EEF7FA; 
     appearance: none; 
     cursor: pointer;
     border-radius: 15px;
@@ -78,8 +77,9 @@ select:focus {
 
 .formx{
 
-    background-color: #EEF7FA; 
-    padding: 20px;
+    background: rgb(88,153,245);
+    background: linear-gradient(90deg, rgba(88,153,245,1) 0%, rgba(180,233,255,1) 52%);
+      padding: 20px;
     border-radius: 10px; 
     width: 70%;
     max-width: 300px; 
@@ -89,6 +89,80 @@ select:focus {
 img.img-principal{
     width: 120px;
     height: auto;
-    margin-left: 136px; 
+    margin: auto;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
  
 }
+
+
+
+
+.button {
+    background-color: #000;
+    border: 0px;
+    outline: 0px;
+    color: #fff;
+    width: 200px;
+    padding: 20px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .liquid {
+    background-color: #2893eb;
+    width: 200px;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-shadow: inset 5px -5px 25px #104e81,
+    inset -5px 0px 25px #104e81;
+  }
+  
+  .liquid::after {
+    content: '';
+    width: 450px;
+    height: 400px;
+    background: #000;
+    z-index: 1;
+    position: absolute;
+    left: -110px;
+    top: -380px;
+    border-radius: 45%;
+    animation: animate 5s linear 2s infinite;
+  }
+  
+  .liquid::before {
+    content: '';
+    width: 450px;
+    height: 400px;
+    background-color: rgb(68, 160, 235);
+    z-index: 1;
+    position: absolute;
+    left: -110px;
+    top: -380px;
+    border-radius: 40%;
+    animation: animate 5s linear 1.8s infinite;
+  }
+  
+  .btn-txt {
+    position: relative;
+    z-index: 1;
+    font-size: 15px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+  }
+  
+  @keyframes animate {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
