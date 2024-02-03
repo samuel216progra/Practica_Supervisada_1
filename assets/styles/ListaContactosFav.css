@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background: rgb(50,90,146);
-background: linear-gradient(90deg, rgba(50,90,146,1) 0%, rgba(244,231,171,1) 50%, rgba(22,157,212,1) 100%);
+    background: rgb(116,132,148);
+background: linear-gradient(90deg, rgba(116,132,148,1) 0%, rgba(141,235,189,1) 40%, rgba(143,236,191,1) 60%, rgba(116,132,148,1) 100%);
     margin: 0;
     padding: 0;
     display: flex;
@@ -154,3 +154,72 @@ img.img-principal {
 }
 
 
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 22px 20px 22px;
+    box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: #e8e8e8;
+    border-color: #ffe2e2;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 36px;
+    transition: transform 400ms cubic-bezier(.68,-0.55,.27,2.5), 
+    border-color 400ms ease-in-out,
+    background-color 400ms ease-in-out;
+    word-spacing: -2px;
+  }
+  
+  @keyframes movingBorders {
+    0% {
+      border-color: #fce4e4;
+    }
+  
+    50% {
+      border-color: #ffd8d8;
+    }
+  
+    90% {
+      border-color: #fce4e4;
+    }
+  }
+  
+  button:hover {
+    background-color: #eee;
+    transform: scale(105%);
+    animation: movingBorders 3s infinite;
+  }
+  
+  button svg {
+    fill: rgb(255, 110, 110);
+  }
+  
+  @keyframes beatingHeart {
+    0% {
+      transform: scale(1);
+    }
+  
+    15% {
+      transform: scale(1.15);
+    }
+  
+    30% {
+      transform: scale(1);
+    }
+  
+    45% {
+      transform: scale(1.15);
+    }
+  
+    60% {
+      transform: scale(1);
+    }
+  }
+  
+  button:hover svg {
+    transform: scale(105%);
+    border-color: #ffd8d8;
+    animation: beatingHeart 1.2s infinite;
+  }
+  
