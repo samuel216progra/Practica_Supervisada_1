@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles/styleLogin.css">
     <title>Login</title>
@@ -5,9 +8,9 @@
 <body>
     <div class="container">
         <div class="heading"> Login </div>
-        <form class="form" onsubmit="redirectToPage(); return false;"> 
-            <input required class="input" type="email" name="email" id="email" placeholder="E-mail">
-            <input required class="input" type="password" name="password" id="password" placeholder="Password">
+        <form class="form" onsubmit="saveAndRedirect(); return false;"> 
+            <input required class="input" type="text" name="email" id="email" placeholder="E-mail">
+            <input required class="input" type="text" name="password" id="password" placeholder="Password">
             <input class="login-button" type="submit" value="Sign In" id="loginBtn">
         </form>
     </div>
