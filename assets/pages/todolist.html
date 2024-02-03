@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/todolist.css">
+    <title>Agenda de Tareas</title>
+</head>
+<body>
+
+    <a href="#menu" id="toggle"><span></span></a>
+
+    <div id="menu">
+      <ul>
+        <li><a href="/index.html">Login</a></li>
+        <li><a href="./ListaContactos.html">Contactos</a></li>
+        <li><a href="./ListaContactosFav.html">Favoritos</a></li>
+        <li><a href="./Perfil.html">Perfil</a></li>
+      </ul>
+    </div>
+    
+    <div class="container">
+        <h1>Agenda de Tareas</h1>
+        <ul id="taskList">
+            <!-- Lista de tareas se generará aquí -->
+        </ul>
+        <button id="addTaskBtn">Agregar Tarea</button>
+    </div>
+
+    <div id="taskModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Agregar Tarea</h2>
+            <form id="taskForm">
+                <label for="taskName">Nombre de la tarea:</label>
+                <input type="text" id="taskName" required>
+                <label for="taskDifficulty">Dificultad:</label>
+                <select id="taskDifficulty" required>
+                    <option value="baja">Baja</option>
+                    <option value="media">Media</option>
+                    <option value="alta">Alta</option>
+                </select>
+                <button type="submit" id="submitTaskBtn">Guardar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../Scripts/todolist.js"></script>
+</body>
+</html>
